@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(243, 154, 168);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    /* display:inline-flex */
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 60vh;
+    /* background-color: rgb(181, 24, 24); */
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('bgimg.jpg');
+   background-size:cover;
+   animation: mymove 5s infinite;
+
+}
+
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px rgb(0, 255, 42);}
+  }
+
+/* //iframee gif */
+#iframeGif
+{
+    border-radius: 100px;
+   
+}
+
+.unorderList
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+  /* containergif */
+  .containergif
+  {
+      position: fixed;
+      /* bottom: 100%; */
+      top: 14%;
+      left: 68%;
+      /* right: 100%; */
+  }
+  
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    /* background-color: white; */
+    background: radial-gradient(rgb(0, 255, 213), rgb(93, 216, 93), rgb(119, 119, 204));
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    opacity: 0.79;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      /* background-color: red; */
+    background-color: rgb(243, 154, 168);
+
+  
+
+    }
+     .containergif
+  {
+      /* position: fixed; */
+      /* bottom: 100%; */
+      /* top: 66%; */
+      /* left: 1%; */
+      /* height: 14px; */
+      /* width: 95px; */
+      /* right: 100%; */
+  }
+    
+
+  }
+
+  @media only screen and (max-width: 850px) {
+    body {
+      /* background-color: red; */
+    background-color: rgb(243, 154, 168);
+
+  
+
+    }
+     .containergif
+  {
+      /* position: fixed; */
+      position: absolute;
+
+      /* bottom: 100%; */
+      top: 12%;
+      left: 65%;
+      /* height: 14px; */
+      width: 95px;
+      /* right: 100%; */
+  }
+
+  .songItem{
+      padding:34px  0px;
+  }
+  #previous,#masterPlay,#next
+  {
+      font-size:medium;
+  }
+    
+
+  }
+
+  @media only screen and (max-width: 350px) {
+    body {
+      /* background-color: red; */
+    background-color: rgb(243, 154, 168);
+
+  
+
+    }
+     .containergif
+  {
+      position: absolute;
+      /* bottom: 100%; */
+      top:12%;
+      left: 65%;
+      /* height: 14px; */
+      width: 95px;
+      /* right: 100%; */
+  }
+  nav ul
+  {
+    background-color: rgb(243, 154, 168);
+
+  }
+  #previous,#masterPlay,#next
+  {
+      font-size:medium;
+  }
+
+  .songItem{
+      padding:34px  0px;
+      font-size: 10px;
+  }
+  #masterSongName
+  {
+      font-size: small;
+  }
+  #myProgressBar
+  {
+      padding: 0px 23px 0px 23px;
+     
+  }
+  
+  .container
+  {
+      background-image: none;
+   animation: mymove 5s infinite;
+
+  }
+  @keyframes mymove {
+   
+  }
+    
+
+  }
+
+  #mules-logo
+  {
+      border-radius: 13px;
+  }
+  #about
+  {
+      text-decoration: none;
+      color: white;
+  }

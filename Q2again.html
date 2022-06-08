@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time out</title>
+    <style>
+        #container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #image
+        {
+            position: absolute;
+
+        }
+        .unorder
+        {
+            display: flex;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Random color demonstration Using js</h1>
+      
+        <section>
+            <label for="colortxt">
+                <textarea name="textarea" id="colortxt" cols="30" rows="10">TEXT</textarea>
+            </label>
+            <br>
+
+            <ul class="unorder">
+
+                <button id="btn" onclick="change()">Change Color</button>
+                <button onclick="cleart()">Stop Repeatation</button>
+            </ul>
+
+         
+
+
+            <img id="image" src="6ov.gif" alt="">
+    
+        </section>
+
+           
+
+    </div>
+    <script>
+
+        function change() {
+            let randomColor='#';
+           randomColor+= Math.random().toString(16).slice(2,8);
+
+            // document.getElementsById('selection').innerHtml.style.backgroundColor="randomColor";
+
+
+            // const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById('colortxt').innerHTML=randomColor;
+            document.body.style.backgroundColor = randomColor;
+            
+        }
+        var id = setInterval(change, 2000);
+
+        function cleart() {
+
+            clearInterval(id);
+        }
+
+        setTimeout(() => {
+            
+            var text_var =document.getElementById("colortxt").style.fontSize="20px";
+        }, 3000);
+
+
+    </script>
+</body>
+
+</html>
